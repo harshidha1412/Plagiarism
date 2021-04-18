@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="/staticroot/images/logo.ico" />
+  <title>Sign Up with PlaCheck</title>
+  
+<link rel="preload" href="main_center.css" as="style">
+<link rel="stylesheet" type="text/css" href="base.css">
+
+
+<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></noscript>
+
+<link rel="preload" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel='stylesheet' type='text/css' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' /></noscript>
+
+<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></noscript>
+
+  <link rel="stylesheet" type="text/css" href="account.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="sign.css">
+</head>
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+</style>
+<body>
+
+
+
+<div class="container-fluid apple">
+    <a href="/"><img class="header_img_logo" itemprop="image" src="logo.gif" alt="logo codesdope" width="100" height="47" style="margin-left:0px;"></a>
+    </div>
+    
+    
+    <div id="a">
+    <div id="b">
+    
+    
+    
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <span class="home"><a aria-label="Home" class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span></a></span>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav" >
+           <li class="about"><a href="about.html">About</a></li>
+            <li class="Sign up"><a href="Signup.html">Sign Up</a></li>
+            <li class="Login"><a href="login.html">Login</a></li>
+            <li class="check"><a href="check.html">Plagiarism Checker</a></li>
+                        <li class="Contact"><a href="contact.html">Contact</a></li>
+
+          </ul>
+
+          
+        </div>
+      </div>
+    </nav>
+    
+    
+</div>
+</div>
+<div id="signup_cover" class="container-fluid">
+  <div class="row">
+    <div id="signupform">
+      <h1 id="welcome_signup">
+        Create a New Account with PlaCheck
+      </h1>
+      <form class="signup" id="my_signup" action="http://localhost:8080/validate1.jsp" method="POST">
+        <input type="hidden" name="csrfmiddlewaretoken" value="Wpt9XcMxOvFyMzt5Gbj78lPI1aWIM6kVCFIpRcmZQlkA9EQfDhKn7P5wpPCiEOKw">
+        <fieldset>
+          <label>
+            <input name="name" value="" type="text" autocomplete="on" placeholder="Username">
+            <span id="error_username"></span>
+          </label>
+          <label>
+            <input name="mail" value="" type="email" autocomplete="on" placeholder="Email">
+            <span id="error_email"></span>
+            </label>
+            <label>
+            <input name="password" value="" type="password" autocomplete="on" placeholder="password">
+            <span id="error_password"></span>
+
+          </label>
+          <label>
+            <input name="password" value="" type="password" autocomplete="on" placeholder="Retype password">
+            <span id="error_password"></span>
+
+          </label>
+          Role
+<label class="container">Student
+  <input type="radio" name="role" value="student">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Teacher
+  <input type="radio" name="role" value="teacher">
+  <span class="checkmark"></span>
+</label>
+
+    
+          
+
+               
+
+          <button class="signup_submit button" type="submit">Sign Up</button>
+          <p class="p_member1">By signing up or logging in, you agree to our <a href="/terms-of-use/" target="_blank">Terms of service</a></p> 
+          <p class="p_member1">and confirm that you have read our <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.</p>
+          <p id="p_member2">
+            Already a member? Go to <a href="login.html">Log In</a> 
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
